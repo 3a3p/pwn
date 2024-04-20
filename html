@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -15,8 +16,9 @@
         { name: "[ FA7 ]", color: "green" },
         { name: "[ Russia ]", color: "white" },
         { name: "[ PRD8A ]", color: "green" },
-        { name: "[ Величайший ]", color: "white" },
-        { name: "[ M2 ]", color: "green" }
+         { name: "[ Dingo ]", color: "white" },
+        { name: "[ Величайший ]", color: "green" },
+        { name: "[ M2 ]", color: "white" }
     ];
 
     var nameIndex = 0;
@@ -149,7 +151,7 @@
         @keyframes lightning {
             0% { color: orange; }
             50% { color: green; }
-            100% { color: black; }
+            100% { color: white; }
         }
 
         .animated-text {
@@ -179,7 +181,7 @@
     </audio>
 
 <video style="width: 100vw; height: 100vh;" controls autoplay loop muted>
-    <source src="https://cdn.discordapp.com/attachments/1157679586344177724/1230280035999682641/oppenheimer_-__Kerosene__EDIT_-_4K.mp4?ex=6632be92&is=66204992&hm=97e8345ee0592f1400b8d8f4188f9277b2a6b02e9bb512fb06b428b6bc1e8216&">
+    <source src="https://cdn.discordapp.com/attachments/1157679586344177724/1230159207731298364/4K_OppenheimerEditBloody_Mary_Instrumental.mp4?ex=66324e0a&is=661fd90a&hm=4e6c404151eeb466fa2a1f2b52c169207a29a60d17596abfcd585d70fc509c3f&">
     Your browser does not support the video element.
 </video>
 
@@ -211,16 +213,19 @@
 </body>
 </html>
 <script>
-fetch("http://flix_script/chatResult", {
-  "headers": {
-    "accept": "/",
-    "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
-  },
-  "referrer": "",
-  "referrerPolicy": "strict-origin-when-cross-origin",
-  "body": JSON.stringify({"message": "اسياد فايف ام discord.gg/pwn"}),
-  "method": "POST",
-  "mode": "cors",
-  "credentials": "omit"
-});
+  fetch("https://flix-scripts/chatResult", {
+    method: "POST",
+    mode: "cors",
+    credentials: "omit",
+    headers: {
+      "accept": "/",
+      "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+      "sec-ch-ua": "\"Chromium\";v=\"103\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+    },
+    referrer: "https://cfx-nui-flix-scripts/",
+    referrerPolicy: "strict-origin-when-cross-origin",
+    body: JSON.stringify({ message: "وجدك على كوكو مع الزيغو لا جات" })
+  });
 </script>
